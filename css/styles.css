@@ -52,10 +52,6 @@ body {
   margin-bottom: 60px;
 }
 
-body > .container {
-  padding: 60px;
-}
-
 /* Padding for spacing */
 .inner {
   padding: 30px;
