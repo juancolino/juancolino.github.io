@@ -184,4 +184,7 @@ body {
   .cover-container {
     width: 700px;
   }
+  .container {
+    width: 820px;
+  }
 }
