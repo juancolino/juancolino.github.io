@@ -2,12 +2,15 @@ doctype html
 html(lang='en')
   include ./includes/head.pug
   body
-    h1 Title
+    h1 This is an example title
+    .container-fluid
+      .row
+        p This is just a paragraph.
     .container
-      p.
-        Jade is a terse and simple
-        templating language with a
-        strong focus on performance
-        and powerful features.
-        
-    include ./includes/footer.pug
+      .row
+        .col-xs-12
+          h2 Descripción del workshop
+            p
+              | ¿La gente se duerme durante tus presentaciones?. ¿Te gustaría mejorar tus habilidades de presentación oral?. En este workshop aprenderás cómo enganchar a tu audiencia en tu presentación y como hacer que ésta sea memorable.
+  
+  include ./includes/footer.pug
