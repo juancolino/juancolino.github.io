@@ -9,13 +9,30 @@ nav.navbar.navbar-default.navbar-fixed-top
       a.navbar-brand(href='index.html') #[img(width="100" height="40" src="img/juancolino@2x.png")]
     .collapse.navbar-collapse
       ul.nav.navbar-nav
-        li
-          a(href='index.html') Home
-        li
-          a(href='#') Portfolio
-        li
-          a(href='files/CV_JuanColino_en.pdf') Resume
-        li.active
-          a(href='ws.html') Workshops
-        li
-          a(href='#') Contact
+        if active_item == 1
+          li.active
+            a(href='index.html') Home
+        else
+          li
+            a(href='index.html') Home
+        if active_item == 2
+          li.active
+            a(href='#') Portfolio
+        else
+          li
+            a(href='#') Portfolio
+        if active_item == 3
+          li.active
+            a(href='files/CV_JuanColino_en.pdf') Resume
+        else
+          li
+            a(href='files/CV_JuanColino_en.pdf') Resume
+        if active_item == 4
+          li.active
+            a(href='ws.html') Workshops
+        else
+          li
+            a(href='ws.html') Workshops
+        if active_item == 5
+          li.active
+            a(href='#') Contact
